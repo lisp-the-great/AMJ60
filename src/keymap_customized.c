@@ -8,9 +8,9 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
 #endif
     /* Keymap 0: Default Layer
      * ,-----------------------------------------------------------.
-     * |Esc|  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|  -|  =|Backsp |
+     * |Esc|  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|  -|  =|  \|  `|
      * |-----------------------------------------------------------|
-     * |Tab  |  Q|  W|  E|  R|  T|  Y|  U|  I|  O|  P|  [|  ]|    \|
+     * |Tab  |  Q|  W|  E|  R|  T|  Y|  U|  I|  O|  P|  [|  ]| Bksp|
      * |-----------------------------------------------------------|
      * |Ctrl  |  A|  S|  D|  F|  G|  H|  J|  K|  L|  ;|  '|  Return|
      * |-----------------------------------------------------------|
@@ -20,16 +20,16 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
      * `-----------------------------------------------------------'
      */
     KEYMAP(
-        ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSPC,  NO,\
-        TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSLS,\
+        ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSLS,  GRV,\
+        TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSPC,\
         LCTL,A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,NO,  ENT, \
         LSFT,NO,  Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,NO,  RSFT,\
         FN0, LGUI,LALT,          SPC,                     FN0, RALT,RGUI,RCTL),
     /* Keymap 1: Fn0 Layer
      * ,-----------------------------------------------------------.
-     * |  `| F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|Delete |
+     * |  `| F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|   |   |
      * |-----------------------------------------------------------|
-     * |     |   |PgU|   |   |   |Cal|   |Ins|   |Psc|Slk|   |     |
+     * |     |   |PgU|   |   |   |Cal|   |Ins|   |Psc|Slk|   |  Del|
      * |-----------------------------------------------------------|
      * |Caps  |Hom|PgD|End|   |   |Lef|Dow| Up|Rig|   |Pau|        |
      * |-----------------------------------------------------------|
@@ -39,8 +39,8 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
      * `-----------------------------------------------------------'
      */
     KEYMAP(
-        GRV, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, DEL,  NO, \
-        TRNS,TRNS,PGUP,TRNS,TRNS,TRNS,CALC,TRNS,INS, TRNS,PSCR,SLCK,TRNS,TRNS,\
+        GRV, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, TRNS,TRNS, \
+        TRNS,TRNS,PGUP,TRNS,TRNS,TRNS,CALC,TRNS,INS, TRNS,PSCR,SLCK,TRNS,DEL, \
         CAPS,HOME,PGDN,END, TRNS,TRNS,LEFT,DOWN,UP,  RGHT,TRNS,PAUS,NO,  TRNS,\
         TRNS,NO,  TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,VOLD,VOLU,MUTE,NO,  TRNS,\
         TRNS,TRNS,TRNS,          TRNS,                    TRNS,TRNS,TRNS,TRNS),
