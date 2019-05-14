@@ -48,7 +48,7 @@ TMK_DIR = ../tmk_core_custom
 TARGET_DIR = .
 
 # project specific files
-SRC =	keymap_common.c \
+SRC =	keymap_customized.c \
 	matrix.c \
 	led.c \
 	backlight.c \
