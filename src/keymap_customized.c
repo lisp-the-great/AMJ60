@@ -57,7 +57,8 @@ const uint16_t fn_actions[] PROGMEM = {
     [0] = ACTION_LAYER_MOMENTARY(1),
     // [1] = ACTION_BACKLIGHT_DECREASE(),
     // [2] = ACTION_BACKLIGHT_TOGGLE(),
-    // [3] = ACTION_BACKLIGHT_INCREASE()};
+    // [3] = ACTION_BACKLIGHT_INCREASE()
+};
 
 #ifdef KEYMAP_IN_EEPROM_ENABLE
 uint16_t keys_count(void)
